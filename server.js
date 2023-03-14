@@ -28,9 +28,6 @@ const URL = process.env.MONGODB_URI || `mongodb+srv://${USERNAME}:${PASSWARD}@ec
 
 connection(URL);
 
-if (process.env.NODE_ENV === 'production'){
-   app.use(express.static('flipkart_clone/build'))
-}
 
 
 app.listen(PORT, ()=>{
